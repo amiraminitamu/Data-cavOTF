@@ -19,9 +19,7 @@ t_bor, T_bor = load_xy("temp_bor.dat")
 fig, axes = plt.subplots(2, 2, figsize=(8, 8))
 plt.subplots_adjust(wspace=0.25, hspace=0.30)
 
-# =========================================================================
 # PANEL (c) — NO CAVITY
-# =========================================================================
 ax = axes[0,0]
 
 x, y = load_xy("no_cavity.dat")
@@ -46,9 +44,7 @@ axA.set_box_aspect(1)
 figA.savefig("Fig3c.pdf", bbox_inches="tight")
 plt.close(figA)
 
-# =========================================================================
 # PANEL (e) — TEMPERATURE vs TIME
-# =========================================================================
 ax = axes[0,1]
 
 ax.plot(t_mul, T_mul, c="#ff9f43", lw=2)
@@ -73,9 +69,7 @@ axB.set_box_aspect(1)
 figB.savefig("Fig3e.pdf", bbox_inches="tight")
 plt.close(figB)
 
-# =========================================================================
-# PANEL (d) — 19:2 Spectrum
-# =========================================================================
+# PANEL (d)
 ax = axes[1,0]
 
 x, y = load_xy("cavity.dat")
@@ -104,9 +98,7 @@ axC.set_box_aspect(1)
 figC.savefig("Fig3d.pdf", bbox_inches="tight")
 plt.close(figC)
 
-# =========================================================================
-# PANEL (f) — OVERLAY: 19:2 vs H2O-off
-# =========================================================================
+# PANEL (f)
 ax = axes[1,1]
 
 # 19:2
